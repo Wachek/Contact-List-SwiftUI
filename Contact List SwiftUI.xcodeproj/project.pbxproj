@@ -13,6 +13,7 @@
 		8B7481012909AF720066C903 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7481002909AF720066C903 /* Preview Assets.xcassets */; };
 		8B7481082909B34E0066C903 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7481072909B34E0066C903 /* Person.swift */; };
 		8B74810E2909B5A90066C903 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B74810D2909B5A90066C903 /* DataManager.swift */; };
+		8B7481102909BB2E0066C903 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B74810F2909BB2E0066C903 /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8B7481002909AF720066C903 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B7481072909B34E0066C903 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8B74810D2909B5A90066C903 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8B74810F2909BB2E0066C903 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				8B7480F92909AF6D0066C903 /* Contact_List_SwiftUIApp.swift */,
 				8B7480FB2909AF6D0066C903 /* ContentView.swift */,
+				8B74810F2909BB2E0066C903 /* HomeScreen.swift */,
 				8B74810C2909B47E0066C903 /* Services */,
 				8B7481092909B3550066C903 /* Models */,
 				8B7480FD2909AF720066C903 /* Assets.xcassets */,
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7481082909B34E0066C903 /* Person.swift in Sources */,
+				8B7481102909BB2E0066C903 /* HomeScreen.swift in Sources */,
 				8B74810E2909B5A90066C903 /* DataManager.swift in Sources */,
 				8B7480FC2909AF6D0066C903 /* ContentView.swift in Sources */,
 				8B7480FA2909AF6D0066C903 /* Contact_List_SwiftUIApp.swift in Sources */,
