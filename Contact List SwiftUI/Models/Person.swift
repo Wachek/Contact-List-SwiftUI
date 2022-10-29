@@ -7,12 +7,13 @@
 
 import Foundation
 
-struct Person: Hashable {
+struct Person: Hashable, Identifiable {
     
     let name: String
     let lastname: String
     let email: String
     let phoneNumber: String
+    let id = UUID()
     
     var fullName: String {
         "\(name) \(lastname)"

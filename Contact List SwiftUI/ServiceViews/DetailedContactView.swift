@@ -1,5 +1,5 @@
 //
-//  ContactDetails.swift
+//  DetailedContactView.swift
 //  Contact List SwiftUI
 //
 //  Created by Вячеслав Турчак on 29.10.2022.
@@ -7,20 +7,26 @@
 
 import SwiftUI
 
-struct ContactDetails: View {
+struct DetailedContactView: View {
     let person: Person
     
     var body: some View {
-        VStack {
-            Image(systemName: "person.fill")
-                .resizable()
-                .frame(width: 150, height: 150)
+        List {
+            HStack {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                Spacer()
+            }
             HStack {
                 Image(systemName: "phone")
+                    .foregroundColor(.blue)
                 Text(person.phoneNumber)
             }
             HStack {
                 Image(systemName: "envelope")
+                    .foregroundColor(.blue)
                 Text(person.email)
             }
             .navigationTitle(person.fullName)
@@ -28,8 +34,8 @@ struct ContactDetails: View {
     }
 }
 
-struct ContactDetails_Previews: PreviewProvider {
+struct DetailedContactView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactDetails(person: Person.getPerson())
+        DetailedContactView(person: Person.getPerson())
     }
 }
