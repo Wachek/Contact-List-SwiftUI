@@ -12,10 +12,14 @@ struct HomeScreen: View {
     let contactList: [Person]
     
     var body: some View {
-        VStack {
+        NavigationView {
             List(contactList, id: \.self) { person in
-                Text("\(person.name) \(person.lastname)")
+                NavigationLink(destination: ContactDetails(person: person)) {
+                    Text("\(person.fullName)")
+                }
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact list")
         }
     }
 }

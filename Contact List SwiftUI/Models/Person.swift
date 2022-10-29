@@ -43,4 +43,16 @@ extension Person {
         
         return persons
     }
+    
+    static func getPerson() -> Person {
+        
+        let person = Person(
+            name: DataManager.shared.names.randomElement() ?? "",
+            lastname: DataManager.shared.lastnames.randomElement() ?? "",
+            email: DataManager.shared.emails.randomElement() ?? "",
+            phoneNumber: DataManager.shared.phones.randomElement() ?? ""
+        )
+        
+        return person
+    }
 }
